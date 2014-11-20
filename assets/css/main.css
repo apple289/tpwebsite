@@ -1,0 +1,287 @@
+/**********************************
+GENERAL
+***********************************/
+
+html {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #86BFC8;
+}
+
+
+body {
+  font-family:'montserratregular';
+}
+
+a {
+  text-decoration: none;
+}
+
+/**********************************
+HEADER
+***********************************/
+
+.site-header { 
+  position: absolute;
+  overflow: hidden;
+  left: 2.2%;
+  top: 3.9%;
+  right: 2.2%;
+  z-index: 4;
+}
+
+.site-header .nav-trigger {
+    background: #86BFC8 url(../img/trigger-white.png) left top no-repeat;
+    float: left;
+    /*cursor: url(../img/cursor.cur), default !important;*/
+    border: 3px solid #FFFFFF;
+    width: 26px;
+    height: 26px;
+    color: #86BFC8;
+    font-size: 14px;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 26px;
+    text-decoration: none;
+    position: relative;
+
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.site-header .nav-trigger .nav-trigger-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+
+    -webkit-transition: all 20000ms linear;
+    -o-transition: all 20000ms linear;
+    -moz-transition: all 20000ms linear;
+    transition: all 20000ms linear;
+}
+.site-header .nav-trigger .nav-trigger-line {
+    background: #fff;
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    margin-left: -2px;
+    margin-top: 8px;
+    width: 4px;
+    height: 10px;
+}
+
+.site-header .nav-trigger:hover,
+.site-header.green .nav-trigger:hover {
+    border-color: #c6f4d4;
+    background-color: #c6f4d4;
+}
+.site-header .site-menu {
+    margin-left: 30px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.site-menu a {
+    margin-right: 18px;
+    font-family: 'montserratbold';
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 32px;
+    display: none;
+    opacity: 0;
+
+    -webkit-transition: color 100ms linear;
+    -o-transition: color 100ms linear;
+    -moz-transition: color 100ms linear;
+    transition: color 100ms linear;
+}
+.site-header .site-menu a.show {
+    opacity: 1;
+    display: inline-block;
+}
+.site-header.green .site-menu a.active,
+.site-header .site-menu a.active,
+.site-header .site-menu a:hover { color: #c6f4d4; }
+.site-header .social-bar {
+    float: right;
+    overflow: hidden;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/**********************************
+PAGE: HOME
+***********************************/
+
+.main-logo {
+  position: absolute;
+  border-radius: 119px;
+  left: 50%;
+  top: 27.38%;
+  height: 238px;
+  width: 238px;
+  background: #99C8D0;
+  margin-left: -119px;
+  z-index: 3;
+}
+
+.main-logo .main-logo-shadow {
+  background: url("../img/long-shadow.png") 2px 62px no-repeat;
+  position: absolute;
+  left: 4px;
+  top: -2px;
+  z-index: 2;
+  height: 390px;
+  width: 298px;
+}
+
+.main-logo .logo-img {
+  background: url("../img/tlogo.png") left top no-repeat;
+  position: absolute;
+  left: 8%;
+  top: 19px;
+  height: 200px;
+  width: 200px;
+  z-index: 3;
+  background-size: contain;
+}
+
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7
+}
+
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+
+
+/**********************************
+PAGE: 
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image:url('..assets/img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('..assets/img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('..assets/img/twitter.png');
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+
+/* links */
+a {
+  color: #fff;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #555;
+}
+
+/*contact info */
+li a { 
+  color: #8c8c8c;
+}
+
+
+
+
+
+
+
+
+
+
