@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Thao Pham| Designer</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -32,8 +34,36 @@
         <a href="http://facebook.com/thaophuong.pham.31"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
         </nav>
       </header>
+      <section class="site-content clearfix full-height">
+                    <div id="form-contact">
+                        <h1 id="hello">SAY 'HELLO'</h1>
+                        <form id="visitor" action="contact.php">
+                            <div class="formfield clearfix">
+                                <div class="col">
+                                    <div class="input-holder">
+                                        <input type="text" class="text" id="your-name" placeholder="YOUR NAME" />
+                                    </div>
+                                </div>
+                                <div class="col second">
+                                    <div class="input-holder">
+                                        <input type="text" class="text" id="your-email" placeholder="YOUR E-MAIL" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formfield">
+                                <div class="input-holder">
+                                    <textarea id="message" placeholder="YOUR MESSAGE"></textarea>
+                                </div>
+                            </div>
+
+                            <input id="send-message" type="submit" value="SEND MESSAGE" />
+
+                            <span id="result"></span>
+                        </form>
+                    </div>
+                </section>
     
-      <section class="site-content full-height">
+      <!-- <section class="site-content full-height">
         <div id="contact">
         <h3>General Information</h3>
         <p>I am currently looking for new design work. Please email me! </p>
@@ -44,10 +74,13 @@
           <li class="mail"><a href="mailto:thaophgph@gmail.com">thaophgph@gmail.com</a></li>
           <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=applebee289">@applebee289</a></li>
         </ul>
-      </section>
-      <footer>
+      </section> -->
+     <!--  <footer>
         <p>&copy; 2014 Thao Pham.</p>
-      </footer>
-    </div>
+      </footer> -->
+    
+  <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/garphee.custom.js"></script>  
 </body>
 </html>

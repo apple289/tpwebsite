@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Thao Pham | Designer</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="background-blue">
-    <header class="site-header blue">
+        <header class="site-header blue">
         <span class="nav-trigger">
           <span class="nav-trigger-inside">
             <span class="nav-trigger-line"></span>
@@ -20,8 +21,8 @@
       
         <nav class="site-menu">
         
-          <a href="index.html" class="selected">TP</a>
-          <a href="about.html">About</a>
+          <a href="index.html" >TP</a>
+          <a href="about.html" class="selected">About</a>
           <a href="contact.html">Contact</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="resume.html">Resume</a>
@@ -34,42 +35,37 @@
         </nav>
     </header>
       <section class="site-content full-height">
-        <ul id="gallery">
-          <li>
-            <a href="http://www.fullbrainfilms.minithao.com"/>
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Number 1.</p>
-            </a>
-          </li>
-          <li>
-            <a href="assets/img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Number 2.</p>
-            </a>
-          </li>
-          <li>
-            <a href="assets/img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Number 3.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Number 4.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Number 6.</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+        <div class="portfolio-row clearfix image-on-left">
+                                <div class="portfolio-image">
+                                    <div class="screenshot">
+                                        <img src="assets/img/numbers-01.jpg" alt="thumb" />
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+
+                                <div class="portfolio-text">
+                                    <h2>Fullbrainfilm</h2>
+                                    <h3>Wordpress Website</h3>
+                                    <div class="faw">
+                                       <i class="fa fa-desktop"></i>
+                                </div>
+                                    <div class="portfolio-image-mobile">
+                                        <div class="overlay"></div>
+                                        <img src="assets/img/numbers-01.jpg" alt="thumb" />
+                                    </div>
+                                    <div class="what-excerpt"><p>Toortit is a multipurpose wordpress responsive template. It's adaptable to any type of business because it's based on dynamic sections.&nbsp;Each section is fully editable.</p></div>
+                                    <button class="case-study" onclick="window.location.href='case.php?id=54';">View Case Study</button>
+                                </div>
+
+                                
+                </section>
+
+<!-- 
       <footer>
         <p>&copy; 2014 Thao Pham.</p>
-      </footer>
-    </div>
+      </footer> -->
+  <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/garphee.custom.js"></script>    
   </body>
 </html>
