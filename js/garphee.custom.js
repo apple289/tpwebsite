@@ -64,6 +64,7 @@ Garphee.Objects = {
 
 Garphee.Actions = {
     'InitLoader': function() {
+        console.log('12');
         var contentLoader = Garphee.Objects.ContentLoader;
         var loader = contentLoader.parent();
         var percentValue = contentLoader.find("#percent-value");
@@ -73,6 +74,9 @@ Garphee.Actions = {
         var intervalId = setInterval(function(){
             loaded += 1;
             is100 = loaded == 100;
+            setTimeout(function(){
+                        Garphee.Actions.InitFlubber();
+                    }, 300);
 
             percentValue.text(loaded + '%');
 
@@ -169,9 +173,10 @@ Garphee.Actions = {
     },
 
     'InitFlubber': function() {
-        var flubbers = $(".flubber");
-        var flubberQuotes = flubbers.children(".flubber-quote");
-        var flubberEyes = flubbers.find(".flubber-eyes");
+        
+        var flubbers = $(".pompom");
+        var flubberQuotes = flubbers.children(".pompom-quote");
+        // var flubberEyes = flubbers.find(".flubber-eyes");
 
         var flubX = 0;
         var flubY = 0;
@@ -240,12 +245,6 @@ Garphee.Actions = {
                 angle = angle > 60 ? 60 : angle;
                 angle = angle / 2;
 
-                flubberEyes.css({
-                    'transform': 'rotate(' + angle + 'deg)',
-                    '-ms-transform': 'rotate(' + angle + 'deg)',
-                    '-webkit-transform': 'rotate(' + angle + 'deg)',
-                    '-o-transition': 'rotate(' + angle + 'deg)'
-                });
             });
         });
     },
