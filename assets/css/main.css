@@ -228,7 +228,7 @@ PAGE: HOME
     background-size: contain;
 }
 .pompom .pompom-quote {
-    background: #87d1c3;
+    background: #72a5aa;
     border-radius: 6px;
     opacity: 0;
     width: 170px;
@@ -441,46 +441,36 @@ PAGE: ABOUT
 }
 
 #container { 
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  float: left;
 }
 
-#portfolio { 
-  position: absolute;
+.circle-outer {
+  width: 33%;
+  float:left;
+}
+
+.circle-box { 
+  margin: 0 auto;
   border-radius: 200px;
-  left: 30%;
-  top: 27.38%;
   height: 100px;
   width: 100px;
   background: #9bccd2;
   z-index: 3;
-  margin-left: -119px;
+  vertical-align:middle;
+  margin-left:;
 }
 
-#resume {
-  position: absolute;
-  border-radius: 200px;
-  left: 100%;
-  top: 27.38%;
-  height: 100px;
-  width: 100px;
-  background: #9bccd2;
-  /*margin-left: -10px;*/
-  z-index: 3;
-}
 
-#skills { 
-  position: absolute;
-  border-radius: 200px;
-  left: 60%;
-  top: 27.38%;
-  height: 100px;
-  width: 100px;
-  background: #9bccd2;
-  /*margin-left: -10px;*/
-  z-index: 3;
+.title {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
 
 
 /**********************************
