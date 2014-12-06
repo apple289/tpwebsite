@@ -450,6 +450,10 @@ PAGE: ABOUT
     white-space: nowrap;
     line-height: 0.9;
 }
+#about-text p {
+  font-family: 'montserratlight';
+  font-size: 14px;
+}
 
 #about-image {
     position: absolute;
