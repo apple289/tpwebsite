@@ -12,6 +12,9 @@ html {
 body {
   font-family:'montserratregular';
 }
+body.blue {
+  background-color: #86bfc8;
+}
 
 a {
   text-decoration: none;
@@ -43,6 +46,13 @@ color: #ffffff;
 /**********************************
 HEADER
 ***********************************/
+
+.background {
+   -webkit-transition:  200ms linear;
+    -o-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
 
 .site-header { 
   position: absolute;
@@ -193,6 +203,28 @@ HEADER
     color: #86BFC8;
     border-color: #86BFC8;
 }
+
+#mobile-nav {
+    background: #5ba497;
+    bottom: 0px;
+    font-size:  14px;
+    left: -122px;
+    padding-top: 13px;
+    position: fixed;
+    text-transform: uppercase;
+    top: 0px;
+    width: 122px;
+    z-index: 10;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+#mobile-nav a {
+    color: #fff;
+    display: block;
+    padding: 11px 0px 11px 14px;
+}
+#mobile-nav a:hover { color: #c6f4d4; }
+
 
 /**********************************
 FOOTER
@@ -566,6 +598,66 @@ PAGE: RESUME
 .resume-content-left h1 { 
     font-family: "montserratbold";
 
+}
+
+
+/**********************************
+
+***********************************/
+
+@media (max-width: 767px) {
+    body.index {
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    #site-holder { overflow: visible; }
+    #flip { left: 0px !important; }
+
+    #mobile-nav,
+    #flip,
+    .site-header .nav-trigger,
+    #page.case {
+        -webkit-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+    }
+
+    .show-sidebar .background {
+      position: absolute;
+      top: 0;
+      left: 122px;
+      right: 0;
+      bottom: 0;
+    }
+
+
+    .show-sidebar #mobile-nav,
+    .show-sidebar #flip,
+    .show-sidebar #page.case {
+        transform: translateX(122px);
+        -ms-transform: translateX(122px);
+        -webkit-transform: translateX(122px);
+        -o-transition: translateX(122px);
+    }
+
+    .site-header {
+        position: relative;
+        padding: 18px 15px 0px;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .site-header .site-menu { display: none; }
+
+    .site-header .nav-trigger:hover {
+        background-color: #72C9B9;
+        border-color: #72C9B9;
+    }
+    .site-header.green .nav-trigger:hover {
+        background-color: #fff;
+        border-color: #fff;
+    }
 }
 
 
