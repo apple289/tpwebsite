@@ -543,6 +543,9 @@ PAGE: CONTACT
     outline: none;
     width: 100%;
 }
+#form-contact input.text {
+  margin-bottom: 20px;
+}
 #form-contact textarea {
     padding: 20px;
     height: 150px;
