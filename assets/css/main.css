@@ -334,6 +334,15 @@ PAGE: HOME
 PAGE: PORTFOLIO
 ***********************************/
 
+.content-block {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+.content-block:first-child {
+  margin-top: 70px;
+}
+
 .portfolio-row {
     margin: 0px auto 100px;
     width: 72.47%;
