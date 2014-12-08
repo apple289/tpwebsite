@@ -630,7 +630,7 @@ PAGE: RESUME
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .work {
+.education, .work, .references {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -703,6 +703,7 @@ PAGE: RESUME
 .row .ten         { width: 83.33333%; }
 .row .eleven      { width: 91.66667%; }
 .row .twelve      { width: 100%; }
+.row .nine.custom { width: 80%;}
 
 /* Offsets */
 .row .offset-1    { margin-left: 8.33333%; }
